@@ -27,6 +27,7 @@ export default function App() {
     const newTodos = [...todos];
     const currentTodo = newTodos.find((todo) => todo.id === id);
     currentTodo.completed = !currentTodo.completed;
+    setTodos(newTodos);
   };
 
   const handleTodoAdd = () => {
@@ -46,7 +47,7 @@ export default function App() {
   return (
     <>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoTaskRef} ftype="text" placeholder="New Task" />
+      <input ref={todoTaskRef} type="text" placeholder="New Task" />
       <button type="button" onClick={handleTodoAdd}>+</button>
       <button type="button" onClick={handleDeleteAll}>Delete</button>
       <p>
