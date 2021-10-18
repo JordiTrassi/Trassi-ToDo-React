@@ -45,18 +45,20 @@ export default function App() {
   };
 
   return (
-    <>
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <input ref={todoTaskRef} type="text" placeholder="New Task" />
-      <button type="button" onClick={handleTodoAdd}>+</button>
-      <button type="button" onClick={handleDeleteAll}>Delete</button>
-      <p>
+    <div className="container">
+      <input id="taskInput" ref={todoTaskRef} type="text" placeholder="New Task" />
+      <div className="container-buttons">
+        <button id="btn-plus" type="button" onClick={handleTodoAdd} title="Add Task">+</button>
+        <button id="btn-delete" type="button" onClick={handleDeleteAll}>Delete completed tasks</button>
+      </div>
+      <h2 id="container-h2">
         Te quedan
         {' '}
         {todos.filter((todo) => !todo.completed).length}
         {' '}
         tareas para terminar.
-      </p>
-    </>
+      </h2>
+      <TodoList todos={todos} toggleTodo={toggleTodo} />
+    </div>
   );
 }
