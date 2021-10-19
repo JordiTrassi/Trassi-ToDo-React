@@ -11,6 +11,13 @@
   font-size: large;
   border-radius: 5px;
   padding-left: 5px;
+  caret-color: red;
+}
+
+#taskInput:focus {
+  outline: none !important;
+  border: 2px solid red;
+  box-shadow: 0 0 10px #719ece;
 }
 
 .container-buttons {

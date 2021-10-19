@@ -2,6 +2,8 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
+import './TodoList.css';
+
 export default function TodoList({ todos, toggleTodo }) {
   return (
     <ul>
