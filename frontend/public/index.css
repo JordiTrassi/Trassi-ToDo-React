@@ -39,10 +39,15 @@ header {
 }
 
 h1 {
-  margin-top: 10px;
+  margin-top: 5px;
   color: rgb(94, 96, 97);
   font-size: xx-large;
   text-shadow: 0.5px 0.5px rgb(224, 223, 223);
+}
+
+#header-icon {
+  width: 50px;
+  height: auto;
 }
 
 footer {

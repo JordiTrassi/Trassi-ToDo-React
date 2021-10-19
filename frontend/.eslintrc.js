@@ -19,7 +19,9 @@ module.exports = {
     'react',
   ],
   rules: {
+    'jsx-a11y/label-has-for': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
     'react/prop-types': 'off',
+    'jsx-a11y/label-has-associated-control': 'off',
   },
 };

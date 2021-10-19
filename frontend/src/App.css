@@ -32,11 +32,13 @@
   color: rgb(2, 165, 2);
   border-color: rgb(2, 165, 2);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #btn-delete {
   border-color: red;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 #container-h2 {
