@@ -46,10 +46,9 @@ export default function App() {
 
   return (
     <div className="container">
-      <input id="taskInput" ref={todoTaskRef} type="text" placeholder="New Task" />
-      <div className="container-buttons">
+      <div className="container-newTask">
+        <input id="taskInput" ref={todoTaskRef} type="text" placeholder="New Task" />
         <button id="btn-plus" type="button" onClick={handleTodoAdd} title="Add Task">+</button>
-        <button id="btn-delete" type="button" onClick={handleDeleteAll}>Delete completed tasks</button>
       </div>
       <h2 id="container-h2">
         Te quedan
@@ -57,6 +56,7 @@ export default function App() {
         {todos.filter((todo) => !todo.completed).length}
         {' '}
         tareas para terminar.
+        <button id="btn-delete" type="button" onClick={handleDeleteAll}>Delete completed tasks</button>
       </h2>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
     </div>

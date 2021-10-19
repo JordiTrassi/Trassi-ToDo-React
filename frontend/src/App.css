@@ -12,6 +12,7 @@
   border-radius: 5px;
   padding-left: 5px;
   caret-color: red;
+  background-color: rgba(253, 253, 251, 0.493);
 }
 
 #taskInput:focus {
@@ -20,8 +21,8 @@
   box-shadow: 0 0 10px #719ece;
 }
 
-.container-buttons {
-  width: 300px;
+.container-newTask {
+  width: 360px;
   display: flex;
   justify-content: space-around;
   padding-top: 20px;
@@ -29,16 +30,22 @@
 
 #btn-plus {
   font-size: large;
+  font-weight: bold;
   color: rgb(2, 165, 2);
   border-color: rgb(2, 165, 2);
   border-radius: 5px;
   cursor: pointer;
+  background-color: rgba(245, 245, 245, 0.171);
+  box-shadow: 1.5px 1px rgb(146, 146, 146);
 }
 
 #btn-delete {
-  border-color: red;
+  border-color: rgb(202, 2, 2);
   border-radius: 5px;
   cursor: pointer;
+  background-color: rgba(214, 214, 214, 0.157);
+  box-shadow: 1.5px 1px rgb(146, 146, 146);
+  margin-left: 20px;
 }
 
 #container-h2 {
