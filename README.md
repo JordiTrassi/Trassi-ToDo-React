@@ -9,3 +9,5 @@ To Do List made with HTML5, CSS & React 17.
 
 We use the local storage to keep the tasks.
 
+<a href="https://jorditrassi.github.io/Trassi-ToDo-React/">Trassi ToDo List - React 17</a>
+
