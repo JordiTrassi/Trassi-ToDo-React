@@ -1,0 +1,66 @@
+body {
+  background: url("https://www.teahub.io/photos/full/215-2159476_enter-image-description-here-darkness.jpg")
+    center center scroll;
+  background-size: cover;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;  
+}
+
+header, footer {
+  background: linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+    linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+    linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+    linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+    linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+    linear-gradient(
+      #1d1d1d 25%,
+      #1a1a1a 25%,
+      #1a1a1a 50%,
+      transparent 50%,
+      transparent 75%,
+      #242424 75%,
+      #242424
+    );
+  background-color: #131313;
+}
+
+header {
+  height: 60px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-radius: 20px;  
+  background-size: 20px 20px;
+}
+
+h1 {
+  color: rgb(94, 96, 97);
+  font-size: xx-large;
+  margin-top: 5px;
+  text-shadow: 0.5px 0.5px rgb(224, 223, 223);
+}
+
+#header-icon {
+  height: auto;
+  width: 50px;
+}
+
+#root {
+  padding-bottom: 40px;
+}
+
+footer {  
+  background-size: 20px 20px;
+  border-radius: 20px;
+  color: rgb(195, 194, 194);
+  font-size: small;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
